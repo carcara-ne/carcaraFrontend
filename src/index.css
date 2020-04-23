@@ -1,0 +1,70 @@
+/*Geral*/
+*{margin: 0; padding: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; font-size: 18px; font-family: Arial, Helvetica, sans-serif}
+
+a{text-decoration: none; font-weight: bold;}
+.nav{background: #40e0d0;}
+.nav a{text-align: center; padding: 10px 0; color: #FFF;}
+.nav a:hover{background: #20c6b6;}
+
+.info{width:100%; float: left; text-align: center; padding: 50px 0 50px 0;}
+
+.imagem{width: 25%; float: left; text-align: center; padding:5px 0 5px 0;}
+
+/*Pequenos smartphones*/
+@media screen and (max-width: 480px){
+  .header{display:flex; flex-direction: column; margin-bottom: 15px; background: #efefef;}
+  
+  .nav{display:none; flex-direction: column; order: 2;}
+    .nav a{width: 100%;}
+  
+  .buttonMob{order:1; text-align: right; padding: 5px 5% 5px 0;}
+
+  .logo{position: absolute; top: 0; left: 5%;}
+
+  .adress{float: left; order: 3; padding: 10px 5% 20px 20%; line-height: 35px; text-align: center;}
+    .adress img{vertical-align: middle;}
+}
+
+/*Smartphones e tablets*/
+@media screen and (min-width: 481px) and (max-width: 768px){
+  .header{display:flex; flex-direction: column; margin-bottom: 15px; background: #efefef;} 
+  
+  .nav{display:none; flex-direction: column; order: 2;}
+    .nav a{width: 100%;}
+  
+  .buttonMob{order:1; text-align: right; padding: 5px 5% 5px 0;}
+
+  .logo{position: absolute; top: 0; left: 5%;}
+
+  .adress{float: left; order: 3; width: 70%; padding: 20px 5% 20px 20%;line-height: 35px; text-align: center;}
+    .adress img{vertical-align: middle;}
+}
+
+/*Grandes smartphones e pequenos notebooks*/
+@media screen and (min-width: 769px) and (max-width: 1199px){
+  .header{float: left; width: 100%; box-shadow: 0 2px 10px #999999; margin-bottom: 25px; background: #efefef;}
+
+  .nav{display:flex;}
+    .nav a{width: 25%;}
+
+  .buttonMob{display: none;}
+  .logo{float:left; width: 30%; padding: 15px 0 15px 10%;}
+
+  .adress{float: left; width: 70%; padding: 20px 5% 20px 20%;line-height: 35px; text-align: center;}
+    .adress img{vertical-align: middle;}
+}
+
+/*Computadores*/
+@media screen and (min-width: 1200px){
+  .header{float: left; width: 100%; box-shadow: 0 2px 10px #999999; margin-bottom: 25px; background: #efefef;}
+
+  .nav{display:flex;}
+    .nav a{width: 25%;}
+    
+  .buttonMob{display: none;}
+
+  .logo{float:left; width: 30%; padding: 15px 0 15px 10%;}
+
+  .adress{float: left; width: 70%; padding: 20px 5% 20px 20%;line-height: 35px; text-align: center;}
+    .adress img{vertical-align: middle; }
+}
